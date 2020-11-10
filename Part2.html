@@ -366,7 +366,81 @@
         <p><kbd>
             Once you have those exported, Open up this link:<br>
             </kbd></p>
-       <p><a href="https://skeatz.github.io/mods/">"Mods, Png to Gcode"</a></p>
+        
+       <p><a href="https://skeatz.github.io/mods/">Mods PNG to Gcode</a></p>
+        <p><kbd>
+            That will take you here, this is Mods, cloned to a directory that might not change any time soon.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-12-29.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            Right click anywhere, and select Programs,<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-12-33.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            Select Open Server Program,<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-12-37.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            And under Gcode, select mill 2D PCB png<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-12-41.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            You'll be met with this monstrosity, you can ignore most of it and only touch a few things<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-12-47.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            First, in the module on the top left, open your PNG file, if its the Traces, keep it with the routes white on a black<br>
+            background. If its the Outline, invert it, such that its mostly white.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-12-51.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            In the module next to it, input these parameters. For Offset number, that selects how many<br>
+            times the path will be repeated, with an offset of around 0.5. The higher that number, the wider<br>
+            the separation between each trace will be, which would make it easier to solder components onto.<br>
+            However that also means the cycle would take much longer, and the traces might be more fragile.<br>
+            The bit used for the traces is 0.4mm and the one used for the outline is 0.8mm. To the bottom <br>
+            left of that module, enter a cut speed of 50mm per minute, best case is to go slow and steady.<br>
+            and
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-13-06.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            Once all that is ready, click calculate, and you'll have this show up, and the Gcode downloaded.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-13-10.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            One additonal step would be to use Camotics to check the traceroutes for any issues.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-13-13.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            Select Open project, and open the Gcode you just downloaded, and you will see something like this.<br>
+            Look at the green path, that will be the path of the mill bit. It should be alright if the simulation<br>
+            looks like its cutting away more than it should be, because the mill bit in real life is not nearly as<br>
+            big as that orange peg moving around. Once you are satisfied, book a slot on the CNC router, and get cutting.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-13-20.jpg" height="500"/>
+            </p>
+        
         
         
         
