@@ -411,9 +411,9 @@
             times the path will be repeated, with an offset of around 0.5. The higher that number, the wider<br>
             the separation between each trace will be, which would make it easier to solder components onto.<br>
             However that also means the cycle would take much longer, and the traces might be more fragile.<br>
+            I would go for at most 2 offsets, and even that is still pushing it abit too far with a v bit.<br>
             The bit used for the traces is 0.4mm and the one used for the outline is 0.8mm. To the bottom <br>
             left of that module, enter a cut speed of 50mm per minute, best case is to go slow and steady.<br>
-            and
             </kbd></p>
         <p>
             <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-13-06.jpg" height="500"/>
@@ -424,6 +424,16 @@
         <p>
             <img alt="-Insert connect here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-08_15-13-10.jpg" height="500"/>
             </p>
+        <p><kbd>
+            Now repeat this for your outline shape, I would recommend Inverting the colours, so you should end up<br>
+            with a white silhouette of your ciruit board shape, with a black perimeter. Just be sure to change the<br>
+            tool diameter to 0.8mm. Your minimum cut depth would be around 0.42, and the max being 1.67, offset 1.<br>
+            What this will do is to trace the exact same outline, around 4 times, but sending the mill bit down by<br>
+            about 0.4mm each time. This is far safer as it puts less stress on the very thin End-mill bit, shaving<br>
+            off a small layer at a time, as opposed to driving the mill bit down 1.67mm and dragging it along the<br>
+            copper blank, which will almost definitely sheer the bit in half, and put a nice hole into the board.<br>                                                                                                         
+            </kbd></p>
+        
         
         <p><kbd>
             One additonal step would be to use Camotics to check the traceroutes for any issues.<br>
