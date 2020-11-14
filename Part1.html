@@ -54,18 +54,49 @@
             You'll notice a small silver cylinder on the back on a wire, that is the calibration device for<br>
             the miller. The device might require some calibration before running it, so here are the steps.<br>
             </kbd></p>
+        <p>
+            <img alt="-Insert stepcraft-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-14_10-50-21.jpg" height="500"/>
+            </p>
         <p><kbd>
-            First, go get a copper blank, which looks like this, and secure it to the bed of the miller.<br>
+            First, go get a copper blank, which looks like this, apply some double sided tape to the back, and paste<br>
+            it onto one of the cutouts in the plywood bed. Be sure not to overlap any of the double sided tape, you<br>
+            need to keep the copper blank as level as possible. For some added security, get some masking tape and <br>
+            tape the sides of the copper blank down to the bed, to keep it from slipping off the plywood.<br>
             </kbd></p>
         <p>
             <img alt="-Insert copper sheet-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-05_10-45-43.jpg" height="500"/>
             </p>
         <p><kbd>
-            Now place the calibration device onto the copper blank, and manually guide the router head to the calibrator<br>
-            using the arrow keys, press shift or slide the jog speed, to increase the speed of the router head, but be gentle.<br>
+            Now grab a spanner to open the chuck of the mill head, there is a black oval button somwhere below the main Start<br>
+            button, pressing that will lock the rotary head of the mill in place, allowing you to loosen the chuck on the mill.<br>
+            Open it up, and slip in your mill bit. Now there are 2 main types, V bits, and straight End-mills. For cutting traces<br>
+            I would recommend using a V bit as it is much more stable, and you can control the Width of the cut purely based on<br>
+            the cut depth. Save the End-mills for cutting out the outline of your board. Both of them are equally sharp and fragile<br>
+            so pay attention, and take your time when securing the bit into the chuck. Try not to overtighten the chuck, but also<br>
+            try not to leave it too loose. The moment turning the spanner becomes significantly harder, that's the cue to stop.<br>
             </kbd></p>
         <p><kbd>
-            Look to the computer next to it, and you'll see this UI,<br>
+            For context, these are V bits, most in the box will still be fairly sharp.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert vbitt-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-14_11-21-10.jpg" height="500"/>
+            </p>
+                <p><kbd>
+            And these are End-mills, you'll notice that a few of them are not as long as the others, those were<br>
+            probably broken off during milling, high torque and a very thin bit are not a good combination.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert endbitt-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-14_11-21-14.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            Now place the calibration device onto the copper blank, and manually guide the router head to the calibrator<br>
+            using the arrow keys for x and y movement, page up and page down for z movement. Press shift to increase the<br>
+            speed of the movement, but do not press shift too often or when the mill bit is anywhere near the bed. There<br>
+            is a chance that the computer will sense and lock Sticky Keys while you're moving the millbit up and down, and<br>
+            instead decide to crush the millbit into the workpiece you spent 40 minutes waiting for. Slow and Steady is key.<br>
+            </kbd></p>
+        <p><kbd>
+            Look to the computer next to it, and you'll see this UI, to load in your Gcode, select Toolpath and Load file.<br>
             </kbd></p>
             <p>
             <img alt="-Insert UI-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-05_10-45-39.jpg" height="500"/>
@@ -74,14 +105,15 @@
             The highlighted button here will lower the drillbit onto the calibrator to re-zero the new Z height.<br>
             Press that button when you have the Gcode ready to run. It is recommended to do an aircut beforehand<br>
             to see if the miller is tracing out the approximate correct pathway. To do the aircut, manually set<br>
-            the Z height to a zero slightly above the copper blank, and hit Run. As this is happening, that Grey<br>
+            the Z height to a zero slightly above the copper blank, and hit Cycle Start. As this is happening, that Grey<br>
             box below the diagram will show the Gcode command list, as well as the Number of the command it is on.<br>
+            If you need to, you can re-zero the X and Y positons, to make sure the blank has enough room for your circuit.<br>
             </kbd></p>
         <p>
             <img alt="-Insert UI highlight-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-05_10-45-36.jpg" height="500"/>
             </p>
         <p><kbd>
-            Before you hit run, do remember that the router is using a very fragile bit, which is subjected to a lot<br>
+            Before you hit cycle start, do remember that the router is using a very fragile bit, which is subjected to a lot<br>
             of vibration and torque, and there is a very good chance of the bit breaking off and flying off in a dangerous<br>
             direction, such as the user's face. Wear safety googles, your mask might do a decent job of protecting the lower<br>
             half of your face, but I would not lean my face anywhere near that router head when it is active. Just let it run<br>
