@@ -144,9 +144,88 @@
             with a bunch of other debris or plastic scraps that look just like your SMD components. Here are some of them:<br>
             </kbd></p>
         <p>
-            <img alt="-Insert SMD stuff-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-11-05_10-45-19.jpg" height="300"/>
+            <img alt="-Insert SMD stuff-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-25-44" height="300"/>
+            </p>
+        <p><kbd>
+            In the top row, we have the Pin headers, a button for reset, and the Attiny 85 IC. In the bottom row we have a Diode<br>
+            and an LED, two resistors, and a capacitor.
+            </kbd></p>
+        <p>
+            <img alt="-Insert SMD diode stuff-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-26-02" height="300"/>
+            </p>
+        <p><kbd>
+            Taking a look at the diode, if you shine a light on it you can see the part number, as well as a thin line across the<br>
+            bottom. That thin line marks which lead is the cathode, in this case, the one pointing down. As for the LED, there is<br>
+            a small green mark on the lead, that marks the cathode as well.
+            </kbd></p>
+        <p>
+            <img alt="-Insert SMD resist stuff-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-26-06" height="300"/>
             </p>
         
+        <p><kbd>
+            As for the Resistors, the one marked with a 1001 is a 1 KOhm resistor, while the one marked 49R9 is a 49.9 Ohm resistor.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert SMDic stuff-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-26-08" height="300"/>
+            </p>
+        <p><kbd>
+            This is the Attiny 85, we will be using this IC in 2 circuits, an ISP unit, and a small microcontroller unit.
+            </kbd></p>
+        <p>
+            <img alt="-Insert SMDlit stuff-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-26-11" height="300"/>
+            </p>
+        <p><kbd>
+            And if we shine a light on it, you can see the part number.
+            </kbd></p>
+        <p><kbd>
+            Now soldering them works the same as just about most other circuits, except this time you have to apply some solder<br>
+            to the board first, get the component in one hand with some tweezers, and the iron in the other hand. The idea is to<br>
+            anchor the component down on one of its leads first, so you can neatly solder the other lead, and then come back to<br>
+            the first one. It will take some practice, and a lot of flux. You have to take your time with this as it is very easy<br>
+            to short out two traces, and near impossible to remove the short without anything a copper brush on hand.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert icsp diagram-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_11-48-30" height="300"/>
+            </p>
+        <p><kbd>
+            This is the circuit diagram for the ISP unit, take note of the polarity on the diode D1 and D2, and the LEDs D3 and D4<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert icsp diagram-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_11-48-23" height="300"/>
+            </p>
+        <p><kbd>
+            As well as which resistors to use, as well as the orientation of the IC, with the dot marking pin 1.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert my ic-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_11-47-10" height="300"/>
+            </p>
+        <p><kbd>
+            This is the final result, not my best, but not bad for my first attempt at doing any SMD soldering.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert board diagram-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_11-48-26" height="300"/>
+            </p>
+        <p><kbd>
+            Now for the microcontroller unit. That schematic does not mark the orientation of the LED D1, so you have<br>
+            to follow the traces. In this case, at D1 the top trace is ground, so naturally that is where the green mark<br>
+            would be.
+            </kbd></p>
+        <p>
+            <img alt="-Insert boaaaaaaard diagram-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_11-47-06" height="300"/>
+            </p>
+        <p><kbd>
+            And here is the completed microcontroller board, which soldered surprisingly well given how long I left it out on a shelf<br>
+            I was very sure it was oxidised beyond the point of no return. If it works well, I might use this for the final project.<br>
+            </kbd></p>
+        <p>
+            <img alt="-Insert fam diagram-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_11-46-57" height="300"/>
+            </p>
+        <p><kbd>
+            And a final look on all the Circuit boards used in this. When it comes to actually starting the ISP unit, we need a programmer<br>
+            that already works, which hopefully turns out alright. Also, be sure to scrape off the excess copper around the USB pins on the ISP<br>
+            unit, leaving it there risks accidentally shorting out the Gnd and 5V pins on your laptop when you plug it in, and maybe cut up an<br>
+            old credit card and stick it under the USB pins to give the board and your laptop USB port good contact.
+            </kbd></p>
         
          
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
