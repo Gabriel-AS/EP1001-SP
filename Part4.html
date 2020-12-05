@@ -113,9 +113,100 @@
             <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-22.jpg" height="500"/>
             </p>
         
+        <p><kbd>
+            Now our first process would be to cut the slots out of the base, its easier to cut those out before cutting<br>
+            the entire section out. Under 2D, select 2D contour, which allows for complete cuts through the material.<br>
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-29.jpg" height="500"/>
+            </p>
         
+        <p><kbd>
+            On the first tab, under tool, click select and you will be brought to this menu. The tool in the FabLab is a 6mm<br>
+            Flat End mill, running an upcut. Much like milling out the PCBs in the previous section, you have to take multiple<br>
+            passes when cutting through the material, otherwise you risk sheering the mill bit off, which is quite terrifying.<br>
+            This also means that the cut finish on Plywood is not as clean when cutting against the grain on the top layers.<br>
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-32.jpg" height="500"/>
+            </p>
         
+        <p><kbd>
+            Now those are the parameters I am using for the cut. The main concern is the Feed Rate, in other words how fast the<br>
+            mill bit is getting dragged through the material. On the PCB millbit we used something around 50mm/minute, this one<br>
+            can take around 1500mm/min. I am not too confident with this feedrate so I might end up going into the text file and<br>
+            changing the number to something a little slower. As for Coolant and Spindle Speed, the machine down at FabLab has the<br>
+            spindle speed controlled externally, so your Gcode would not change anything, and it doesnt have active coolant either.<br>
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-34.jpg" height="500"/>
+            </p>
         
+        <p><kbd>
+            On the next tab, select the lower profiles of the slots you want to cut. This tells the machine to cut to the Lower depth.<br>
+            Also, select tabs as there will be a small piece of leftover wood in the middle of that slot cut, which might get flung<br>
+            around and possibly damage the rest of the wood. I tend to keep the tabs at around 10mm by 2mm big, and select them by<br>
+            distance. You can go in and manually place the tabs by changing the Tab Position setting. But on a model this big, I am<br>
+            perfectly fine with hammering out many tabs. <br>
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-36.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            If you zoom in you can see roughly where the tab will be made. In some cases if you choose to set tabs by Distance and not<br>
+            manually, it will assign tabs in random locations. But on closed profiles like that slot, it manages to keep the position fairly<br>
+            symmetrical. 
+            </kbd></p>
+        
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-39.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            On the third tab you can keep to the system defaults, all except for the bottom height which is offset by -1mm. This<br>
+            ensures that the mill bit punches clean through the material, and makes the finish slightly better on the bottom surface.<br>
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-41.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            Now on to the fourth tab, you can keep to the same default settings, 
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-43.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            Select Multiple passes, choose your roughing stepdown to somewhere around 6mm, and you can leave finishing stepdowns to 0,<br>
+            at the end the cut finish will still look quite rough, so you can select rough final. After all, sandpaper solves everything.<br>
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-46.jpg" height="500"/>
+            </p>
+        <p><kbd>
+            On the last tab, you can keep to the default settings and hit OK.
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-48.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            Which leaves you with this cut profile where you can press simulate under actions, and check if it really is doing multiple passes.<br>
+            </kbd></p>
+ 
+            <p> 
+            <img alt="-Insert tab here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-12-04_12-48-51.jpg" height="500"/>
+            </p>
       
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part1.html">Electronics Production</a><br><p>
