@@ -21,20 +21,20 @@
         
         <h3><kbd>The Programmer</kbd></h3>
         
-        <p><kbd><strong>
+        <p><kbd>
             The first step is to get the toolchain on your computer. This will heavily reference the<br>
             instructions for building FabTinyISP, linked here:</kbd></p>
             
         <p><a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html">FabTinyISP</a><br><p>
         
-        <p><kbd><strong>
+        <p><kbd>
             Scroll down and you'll come to the instructions for Software installation. This is assuming<br>
             you have made the board, finished soldering it, and confident that the circuit is not about<br>
             to short out one of your USB ports. There are seperate instructions depending on your OS, windows<br>
             MacOS or even Linux. This will focus on windows, which happens to be the least straightforward.<br>
             </kbd></p>
             
-        <p><kbd><strong>
+        <p><kbd>
             Programming your Programmer, requires a working programmer. Plug in the working programmer, and<br>
             open up your device manager, somewhere you should be able to see working programmer listed as USBtinySPI.<br>
             After that you can start downloading the toolchain from that link above.<br>
@@ -44,24 +44,59 @@
             mess it up, try this process on a laptop first, and not your expensive PC. 
             </kbd></p>
             
-         <p><kbd><strong>
+         <p><kbd>
             I had no photos of this process, as I had been trying and failing over the course of the past 2 months,<br>
             and only recently managed to get it working. The most I have from it is the sanity check right at the end,<br>
             which is used to tell if all the programs in the toolchain are running right. That should run fine, if it<br>
             does show some errors like "command not found", best strategy is to read the documentation, and ask for help.<br>
             </kbd></p>
              
-          <p><kbd><strong>
-            I had no photos of this process, as I had been trying and failing over the course of the past 2 months,<br>
-            and only recently managed to get it working. The most I have from it is the sanity check right at the end,<br>
-            which is used to tell if all the programs in the toolchain are running right. That should run fine, if it<br>
-            does show some errors like "command not found", best strategy is to read the documentation, and ask for help.<br>
+          <p><kbd>
+            Now go back to the main page, and download a file called fts_firmware_bdm_v1, and extract it to somewhere easy<br>
+            to get to like the C drive main directory. Go in and open the file named Makefile, open it in something like Brackets<br>
+            or notepad, and change this highlighted line, MCU = attiny45. Our board uses an attiny85 chip, so that line has to change<br>
+            to MCU = attiny85. Hit save, and keep that file open for reference.
             </kbd></p>
             
             <p>
-            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            <img alt="-Insert makefile-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
             </p>
         
+        <p><kbd>
+            Now open up your command prompt, and follow these commands, in this order.
+            </kbd></p>
+        <p><kbd>
+            <strong>avrdude -c usbtiny -p t85</strong><br>
+            you can go in and see what this does if you enter just <strong>avrdude</strong>
+            </kbd></p>
+        <p><kbd>
+            <strong>cd c:\fts_firmware_bdm_v1</strong><br>
+            this step is just to enter the directory of where your fts_firmware_bdm_v1 file is,<br>
+            in my case its in that directory, so change it to yours if its not the same.<br>
+            </kbd></p>
+        <p><kbd>
+            <strong>dir</strong><br>
+            </kbd></p>
+        <p><kbd>
+            <strong>make</strong><br>
+            this will build a .hex file<br>
+            </kbd></p>
+        <p><kbd>
+            <strong>dir</strong><br>
+            </kbd></p>
+        <p><kbd>
+            <strong>make flash</strong><br>
+            this will use the working programmer, and load this onto the target programmer<br>
+            </kbd></p>
+        <p><kbd>
+            <strong>make fuses</strong><br>
+            this will program fuse bits onto the target chip, which will be blown out later<br>
+            </kbd></p>
+        <p><kbd>
+            <strong>make rstdisbl</strong><br>
+            this will blow out the fuses on the target programmer, Locking it into its state as a programmer<br>
+            which also means that you Only do this when you are sure everything went right.<br>
+            </kbd></p>
         
       
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
