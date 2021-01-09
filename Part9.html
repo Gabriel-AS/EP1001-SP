@@ -17,17 +17,59 @@
     <body>
         
         <h1>EP1001</h1>
-        <h2>This is a header</h2>
+        <h2>Final Project</h2>
         
-        <h3><kbd>This is a subheader</kbd></h3>
+        <p><kbd>
+             For the final project, I am going to build a better LED Nixie display. This is again, going to be heavily<br>
+             influenced by the Cronixie project, and instead of a full clock display, I will just construct<br>
+             one display, that can display the digits from 0 to 9, and can be controlled by a scroll wheel.<br>
+            </kbd></p>
         
-        <p><kbd><strong>
-            This is a text blob.</kbd></p>
- 
-            <p>
-            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            <p><a href= "/Users/STARGAZER/Desktop/DFAB/photo_2020-04-27_07-54-03.jpg">
+            <img alt="box" src= "https://gabriel-as.github.io/EP1000-SP/photo_2020-08-13_13-20-32.jpg" height="400"/>
+            </a></p>
+        
+        <p><kbd>
+            The main improvement, will be if I can shrink the entire circuit up there, to a single copper blank,<br>
+            which leaves me about 75x50mm of space to lay All that. The way I hope to do this, is by fitting the<br>
+            Attiny85 onto the same board as the LEDS. On top of that, that one board will also have the ISP header<br>
+            and two seperate power supplies, one for the LEDS and another for the Attiny85. Not to mention the 20<br>
+            LEDs. I throught of doing a 7 Segment variant, which will be alot simpler, but I am not sure if the Parallax<br>
+            offset from one plate to the next would make it look weird.</kbd></p>
+        <p>
+            <img alt="-Insert google-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
             </p>
-      
+        <p><kbd>
+            The circut should not be too difficult, Like last time it only needs 2 I/O pins, one for the LED data line,<br>
+            and the other running an analogread for the scroll wheel. I'll also be using the WS2812 Neopixel LED, if I<br>
+            cannot get it in a raw package, I might just get a bunch of them premade on a 3x3 matrix board, like last time,<br>
+            but instead I will just desolder them from the board and solder them onto my circuit board.<br>
+            <kbd></p>
+        
+            <p>
+            <img alt="-Insert githubhere-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            </p>
+      <p><kbd>
+            Before that, I designed a circuit schematic on eagle, and uses the footprint of the WS2812 LED, which I got<br>
+            from this github page above.<br>
+            <kbd></p>
+          
+          <p>
+            <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            </p>
+      <p><kbd>
+            I ended up chaining the 20 LEDs together first, Dout into Din, to form this massive 20 LED strip, so in theory,<br>
+            LEDs 0 and 19 will control number 0, and LEDs 9 and 10 control number 9.<br>
+            <kbd></p>
+          
+          <p>
+            <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            </p>
+      <p><kbd>
+            I ended up chaining the 20 LEDs together first, Dout into Din, to form this massive 20 LED strip, so in theory,<br>
+            LEDs 0 and 19 will control number 0, and LEDs 9 and 10 control number 9.<br>
+            <kbd></p>
+          
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part1.html">Electronics Production</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part2.html">Electronics Design</a><br><p>
