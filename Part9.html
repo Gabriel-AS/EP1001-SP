@@ -30,6 +30,17 @@
             </a></p>
         
         <p><kbd>
+            <strong>List of Materials needed:</strong><br>
+            20 WS2812B LEDs<br>
+            1 Micro USB Female Port<br>
+            1 100nF SMD Capacitor<br>
+            1 49.9Ohm SMD Resistor<br>
+            2 ISP headers<br>
+            1 Attiny85 IC<br>
+            1 Copper PCB Blank
+            <kbd></p>
+        
+        <p><kbd>
             The main improvement, will be if I can shrink the entire circuit up there, to a single copper blank,<br>
             which leaves me about 75x50mm of space to lay All that. The way I hope to do this, is by fitting the<br>
             Attiny85 onto the same board as the LEDS. On top of that, that one board will also have the ISP header<br>
@@ -37,7 +48,7 @@
             LEDs. I throught of doing a 7 Segment variant, which will be alot simpler, but I am not sure if the Parallax<br>
             offset from one plate to the next would make it look weird.</kbd></p>
         <p>
-            <img alt="-Insert google-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            <img alt="-Insert google-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-53.jpg" height="500"/>
             </p>
         <p><kbd>
             The circut should not be too difficult, Like last time it only needs 2 I/O pins, one for the LED data line,<br>
@@ -47,7 +58,7 @@
             <kbd></p>
         
             <p>
-            <img alt="-Insert githubhere-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            <img alt="-Insert githubhere-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-50.jpg" height="500"/>
             </p>
       <p><kbd>
             Before that, I designed a circuit schematic on eagle, and uses the footprint of the WS2812 LED, which I got<br>
@@ -55,7 +66,7 @@
             <kbd></p>
           
           <p>
-            <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-46.jpg" height="500"/>
             </p>
       <p><kbd>
             I ended up chaining the 20 LEDs together first, Dout into Din, to form this massive 20 LED strip, so in theory,<br>
@@ -63,7 +74,15 @@
             <kbd></p>
           
           <p>
-            <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-43.jpg" height="500"/>
+            </p>
+      <p><kbd>
+            I ended up chaining the 20 LEDs together first, Dout into Din, to form this massive 20 LED strip, so in theory,<br>
+            LEDs 0 and 19 will control number 0, and LEDs 9 and 10 control number 9.<br>
+            <kbd></p>
+          
+          <p>
+            <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-43.jpg" height="500"/>
             </p>
       <p><kbd>
             I ended up chaining the 20 LEDs together first, Dout into Din, to form this massive 20 LED strip, so in theory,<br>
