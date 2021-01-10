@@ -68,15 +68,31 @@
           <p>
             <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-46.jpg" height="500"/>
             </p>
+          
       <p><kbd>
             I ended up chaining the 20 LEDs together first, Dout into Din, to form this massive 20 LED strip, so in theory,<br>
             LEDs 0 and 19 will control number 0, and LEDs 9 and 10 control number 9.<br>
             And here is the schematic with all the other stuff in it. I plan to run this off 2 power supplies, A barrel jack<br>
             sending a steady 5V to the LEDs, and a Micro USB sending 5V to the Attiny85.<br>
             <kbd></p>
-          
           <p>
-            <img alt="-Insert split here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-17.jpg" height="500"/>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-17.jpg" height="500"/>
+            </p>
+          
+          <p><kbd>
+            On some schematics it shows a capacitor between the Power and Ground pins on each LED, so I added it into the design<br>
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-29.jpg" height="500"/>
+            </p>
+              
+            <p><kbd>
+            But I then realised it was gonna be a nightmare to untangle in the Board arrangement, so I decided to add a single large<br>
+            capacitor between the 5V and ground pins of the LED chain. Here is the final Ratsnest, which just barely fits on a single<br>
+            copper blank. I have a feeling it will not cut properly around the IC chip, so I might set it to cut on just 1 pass.<br>
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-10.jpg" height="500"/>
             </p>
 
           
