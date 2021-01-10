@@ -37,7 +37,7 @@
             1 49.9Ohm SMD Resistor<br>
             2 ISP headers<br>
             1 Attiny85 IC<br>
-            1 Copper PCB Blank
+            2 Copper PCB Blanks
             <kbd></p>
         
         <p><kbd>
@@ -89,7 +89,18 @@
             <p><kbd>
             But I then realised it was gonna be a nightmare to untangle in the Board arrangement, so I decided to add a single large<br>
             capacitor between the 5V and ground pins of the LED chain. Here is the final Ratsnest, which just barely fits on a single<br>
-            copper blank. I have a feeling it will not cut properly around the IC chip, so I might set it to cut on just 1 pass.<br>
+            copper blank. 
+                  <kbd></p>
+                
+             <p><kbd>   
+            I have a feeling it will struggle to cut properly around the IC chip, so I might set it to cut on just 1 pass.<br>
+            The 6 pin header pads are just there to help with soldering on Non Surface Mount components.<br>
+            The pad right at the top and the second one from the bottom, those will be a common ground for both power supplies.<br>
+            There will be a floating Barrel jack port which connects to the bottom 2 pads by wire, the lowest pad being the 5V.<br>
+            The top 3 pads will be connected to a floating Variable Resistor by wire, which will serve as a scroll wheel for input.<br>
+            The middle 2nd pad from the top is connected to the analog input on the Attiny85, while the pad just below it is connected<br>
+            to the Barrel Jack power supply. This is only a first draft, this is just to help me get a rough understanding of How the<br>
+            LED arrangement should look like, and how much space do I have left to work with.<br>
             <kbd></p>
           <p>
             <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-10.jpg" height="500"/>
