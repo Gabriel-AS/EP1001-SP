@@ -17,16 +17,123 @@
     <body>
         
         <h1>EP1001</h1>
-        <h2>This is a header</h2>
+        <h2>Interfacing Apps</h2>
         
-        <h3><kbd>This is a subheader</kbd></h3>
+        <h3><kbd>Arduino and Processing</kbd></h3>
         
-        <p><kbd><strong>
-            This is a text blob.</kbd></p>
+        <p><kbd>
+            Coding is Really not my strength, so I have opted to use abit of preset code to achieve this, which will be linked below. This will use a bit of software<br>
+            called Processing in conjunction with with Arduino IDE to allow for computer input to trigger something on your microcontroller,<br>
+            or for the opposite were sensor data on your microcontroller can be fed back to your computer for some user interfacing.</kbd></p>
  
             <p>
-            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-21.jpg" height="500"/>
             </p>
+        
+        <p><kbd>
+            Be sure to include SoftwareSerial.h, and define your rx and tx pins. This set up on mine allows me to use a serial cable without<br>
+            the need to flip the rx and tx pins around. 
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-34.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            And be sure to change all Serial commands to mySerial. This highlighted command declares the Serial line.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-28.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            mySerial.begin helps start a serial channel to the attiny85. Serial.Begin will not work as<br>
+            apparently that is just a preset operation for Arduino devices, which ours is not.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-24.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            This line checks the serial channel for any incoming data at all.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-24.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            This here scans the serial channel for any incoming data, and reads the most recent one.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-45.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            What this bit of code does is wait for a H on the serial channel, and set the LED on the board to High.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-39.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            And if it gets an L on the serial channel, it sets the LED back to Low.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-39-03.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            On the right, we have processing. Import the processing.serial library
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-57.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            This line tests whether the mouse cursor is over a defined box on screen, if it is, draw a highlight around that box,<br>
+            and send a H down the serial channel to be picked up by arduino IDE.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-52.jpg" height="500"/>
+            </p>
+        
+         <p><kbd>
+            If not, this line will send an L down the serial channel, and return the box to what it looks like by default.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-39-12.jpg" height="500"/>
+            </p>
+        
+         <p><kbd>
+            Then wiring it up to my Laptop, you can see when I move my mouse over the box, it lights up the LED
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-12-45.jpg" height="500"/>
+            </p>
+        
+         <p><kbd>
+            And when I moved my mouse away, the LED turns off.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-13-02.jpg" height="500"/>
+            </p>
+        
+         <p><kbd>
+            I chose not to spend too much time on this section, as I would need to cannibalise this hello board for the Final Project.
+            </kbd></p>
+
+           
       
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part1.html">Electronics Production</a><br><p>
