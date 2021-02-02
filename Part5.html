@@ -17,16 +17,112 @@
     <body>
         
         <h1>EP1001</h1>
-        <h2>This is a header</h2>
+        <h2>3D CNC Machining</h2>
         
-        <h3><kbd>This is a subheader</kbd></h3>
+        <h3><kbd>GCode from Fusion 360</kbd></h3>
         
-        <p><kbd><strong>
-            This is a text blob.</kbd></p>
+        <p><kbd>
+            Once again we will be using Fusion 360 to generate the Gcode, this time for the Stepcraft.<br>
+            The same machine that made the PCBs earlier, can also be used to create foam Bucks for resin<br>
+            casting. First we will need a model, this one is of a Nut, which I intend to use as a scroll knob<br>
+            for the final project. The only thing to take note is that the Smallest gaps in the model, in this<br>
+            case between the edge of the nut and the mould wall, that gap has to be Larger than the mill bit, which<br>
+            in this case is a 3mm flat endmill bit.
+            </kbd></p>
  
             <p>
-            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2020-05-08_12-53-16.jpg" height="500"/>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-34-09.jpg" height="500"/>
             </p>
+        
+        <p><kbd>
+            The first step, much like in 2D CNC, is to create a set up and select your boxpoint. This time the boxpoint<br>
+            is in the center of the model. Once that is done, under 3D, select adaptive clearing, and select your Tool bit,<br>
+            a 3mm flat endmill, and No coolant. The feed rate and the chipload in this case can be higher, as a large end mill<br>
+            cutting Foam, is like a hot knife through butter. So you can stay around 1200mm/min.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-34-28.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            For the next section, all you have to do is select the contours to mill. In this case I split the toolpath to 2 sections.<br>
+            the first is to bore out the hole in the middle, and the next would be to start milling the outer edges of the mould. <br>
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-34-25.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            The third section, the default settings will work, just ensure that the Bottom height is set to 0. This will ensure that<br>
+            the CNC does not cut clean Through the material, unlike in 2D CNC. The end result of this foam cut is to pour Silicone<br>
+            moulding compound into it, so it has to be watertight at least.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-34-18.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            The fourth section, you can leave bring the Roughing stepdown much further as compared to the 2D CNC or PCBs, so in this case<br>
+            it pushes the bit down by 6mm on each level, which allows it to cut through more material in less time. A general guide would<br>
+            be to have the stepdown be the same as the tool diameter, 3mm, but because we are cutting foam, we can be abit more aggresive.<br>
+            As for the Fine stepdown, that is the finishing cut, so have it to 1/10th of the tool diameter, in this case its 0.3mm<br>
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-34-39.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            On the last section, you can leave most of it to the default settings, and hit OK, and wait for abit while it processes.<br>
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-34-32.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            Once that is done, repeat the same process for Another adaptive clearing, in this case its for the outer sections of the nut,<br>
+            as seen here.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-34-53.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            And finally, select your post processing from the top of the workflow. Use STEPCRAFT UCCNC/stepcraft uccnc as your post processor.<br>
+            And select the output folder to be somewhere you can find, like your desktop. And now we can move on to the Actual foam cutting.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-35-05.jpg" height="500"/>
+            </p>
+        
+                <h3><kbd>Machining</kbd></h3>
+
+        <p><kbd>
+            The general set up process is the same as on PCB production, the only difference is that you can be a little less precise in your<br>
+            calibration. I did not even bother using the Calibrating cylinder in the back, I just brought the 3mm mill bit to what I estimated<br>
+            to be the center of the foam piece, marked it with a sharpie and zeroed the x,y,z values.
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-01_13-02-55.jpg" height="500"/>
+            </p>
+        
+        <p><kbd>
+            And almost immediately you notice 2 things. 1, The finishing on foam is not nearly as neat, which means the finishing on the Resin mould<br>
+            will have that same texture, but that actually helps me. I was going for that look of messy Cast Iron for the nut. 2, the dust that the<br>
+            kicks up is truly something to behold. So be sure to wear a mask to not inhale any of the dust, and to have a vacuum cleaner on standby.<br>
+            </kbd></p>
+ 
+            <p>
+            <img alt="-Insert photo here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-01_13-02-44.jpg" height="500"/>
+            </p>
+        
       
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part1.html">Electronics Production</a><br><p>
