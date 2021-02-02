@@ -105,7 +105,122 @@
           <p>
             <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-10_14-19-10.jpg" height="500"/>
             </p>
+                 
+         <p><kbd>
+            So, a few days have passed. First change, the PCB schematic failed 3 times, which I can only conclude to be because I mistyped<br>
+            the trackwidth on DRC to be 6 instead of 16, that and a fouled out V bit.
+            <kbd></p>
+             <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_15-51-17.jpg" height="500"/>
+            </p>
+             
+             
+         <p><kbd>
+            So the ripup; command became very useful. Also, the total size of the board was fine<br>
+            but calibrating the Stepcraft to ensure everything fit was a nightmare, so I shrunk the total size of the pattern. This is the DRC<br>
+            with a track with set to 14 mil, which might be overkill but I was not about to take my chances.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-31-07.jpg" height="500"/>
+            </p>
+             
+             <p><kbd>
+            And here is the rearranged pattern.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-30-56.jpg" height="500"/>
+            </p>
+                 
+                 <p><kbd>
+            This is the what I expect to see on the final copper board.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-30-59.jpg" height="500"/>
+            </p>
+                     
+                     <p><kbd>
+            You can see the changes I made when Comparing the 2 designs
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-31-19.jpg" height="500"/>
+            </p>
+                         <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-30-08.jpg" height="500"/>
+            </p>
+                         
+            
+        <p><kbd>
+            Moment of truth, and it turned out fantastic. Another big change was the Z depth, which I previously set to -0.05,<br>
+            but even that was too deep. So I instead decided to recalibrate the Z height by putting a piece of folded receipt paper<br>
+            under the calibrator cylinder. And immediately I noticed there was much less dust being kicked up by the bit.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_15-50-50.jpg" height="500"/>
+            </p>
+            
+            <p><kbd>
+            On top of that, the traces were so smooth, I could run it up against my finger and barely feel the cut.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_15-51-12.jpg" height="500"/>
+            </p>
+                
+                <p><kbd>
+            In total I ran 2 boards on the new pattern, the first had a slight Z inconsistency, causing some of the traces to only barely not cut.<br>
+            But nothing a little penknife cannot fix, so this became the backup.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-24-32.jpg" height="500"/>
+            </p>
 
+                    <p><kbd>
+            And here is the second board, which cut perfectly. Turns out it was just a matter of shifting the receipt paper around.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-24-25.jpg" height="500"/>
+            </p>
+                        
+                        <p><kbd>
+            You can really see the difference when lit from behind, This is the one where it did not cut all the way through,
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_11-29-35.jpg" height="500"/>
+            </p>
+                            <p><kbd>
+            And this is the one with the clean cuts
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_11-29-24.jpg" height="500"/>
+            </p>
+                                
+                <p><kbd>
+            Now it was time to start the code. I had to turn this hello board, into something that could run at least one data pin,<br>
+            just so I could run the neopixels before I soldered them onto the final board.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-37-57.jpg" height="500"/>
+            </p>    
+                    <p><kbd>
+            So, I chose to cut the line above the resistor leading to VCC, and rip off the bypass I soldered from that pin to the button.<br>
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-17.jpg" height="500"/>
+            </p>  
+                 <p><kbd>
+            Then I soldered a pin to the pad leading straight to the 2nd pin on the IC, or in arduino, Pin 3.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-38-07.jpg" height="500"/>
+            </p>         
+                  <p><kbd>
+            For the neopixels, the serial header on top would provide my VCC and GND, while the new pin would serve as the Din.<br>
+            I first tested the neopixels strip I got on an Arduino Mega, and it worked surprisingly well for something I bought<br>
+            from a scrap pile. 
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-01_13-03-05.jpg" height="500"/>
+            </p>                
+                                
           
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part1.html">Electronics Production</a><br><p>
