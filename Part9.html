@@ -259,14 +259,85 @@
             <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-02-35.jpg" height="500"/>
             </p>    
            <p><kbd>
-            The only issue with the hot air gun is that it tends to damage, fragile SMD components, and out of about 31 I desoldered
+            The main issue with the hot air gun is that it tends to damage, fragile SMD components, and out of about 31 I desoldered
             Only about 21 didnt get completely melted through. So perhaps next time, run the hot air gun on a lower heat. The ones on
             top left cluster, most of the wirebonds on the silicon chip looked to be completely destroyed.
             <kbd></p>
           <p>
             <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-02-31.jpg" height="500"/>
+            </p>  
+               
+             <p><kbd>
+            The next issue, turns out the Eagle library I used for the WS2812B library had the package diagram placed upside down, which<br>
+            meant that I soldered all 20 LEDs on upside down. You'll notice on the schematic earlier, the notches on the LEDs were faced<br>
+            inwards against each other, but in real life, the notches are supposed to be face out away from each other.
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-01-29_18-30-56.jpg" height="500"/>
+            </p>     
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-12_10-59-28.jpg" height="500"/>
+            </p>
+             <p><kbd>
+            So after applying the New code to the fixed board, this was extremely satisfying to see.
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-05-31.jpg" height="500"/>
+            </p>   
+                 
+            <p><kbd>
+            Now for the housing, a neat trick for getting the position for SMD components on Fusion 360, open the circuit file as<br>
+            a canvas, 
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-47.jpg" height="500"/>
+            </p>
+                
+             <p><kbd>
+            And sketch out the approximate size of the component over the pad positions. Thankfully WS2812B LEDs are consistently<br>
+            5x5mm. And now you have a generally close position of the SMD LEDs
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-47.jpg" height="500"/>
+            </p>      
+            
+            <p><kbd>
+            And we can finish off the rest of the body and plug points. The body can be much thinner, but I left about 7mm of spacing<br>
+            to put some weights under the circuit board.
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-49.jpg" height="500"/>
+            </p>
+             <p><kbd>
+            Next, a quick way to create a single DXF pattern across multiple bodies, is to lay all of them flat, and convert all of them<br>
+            to components, 
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-21.jpg" height="500"/>
             </p>    
-                    
+            <p><kbd>
+            Create a sketch on any of the bodies, and select Project
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-28.jpg" height="500"/>
+            </p>     
+            <p><kbd>
+            And select all of the other bodies, they should be marked with purple lines and dots, 
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-31.jpg" height="500"/>
+            </p>
+                
+            <p><kbd>
+            And you can add in the numbers onto each plate. Do keep track of the positioning of the notches at the bottom of<br>
+            each plate.
+            <kbd></p>
+            <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-34.jpg" height="500"/>
+            </p>   
+                
+                
+                
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part1.html">Electronics Production</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part2.html">Electronics Design</a><br><p>
