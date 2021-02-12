@@ -32,10 +32,9 @@
         <p><kbd>
             <strong>List of Materials needed:</strong><br>
             20 WS2812B LEDs<br>
-            1 Micro USB Female Port<br>
             1 100nF SMD Capacitor<br>
             1 49.9Ohm SMD Resistor<br>
-            2 ISP headers<br>
+            1 ISP header<br>
             1 Attiny85 IC<br>
             2 Copper PCB Blanks
             <kbd></p>
@@ -219,9 +218,55 @@
             <kbd></p>
           <p>
             <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-01_13-03-05.jpg" height="500"/>
-            </p>                
-                                
-          
+            </p>
+
+                <p><kbd>
+            After a few days of trying to get the code to work and failing over and over again, I can now conclude that the set up<br>
+            and running 20 neopixels off an attiny85 Is possible.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-02-13.jpg" height="500"/>
+            </p>
+                    
+                    <p><kbd>
+            The first problem was for some reason windows updating tends to mess with your Avrdude toolchain, so I had to redo that.<br>
+            The second problem was that the two pieces of code I was looking at, they seem to have neem written by different people,<br>
+            I got very confused when two pieces of almost identical code, used slightly differing Keywords as seen here,            
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-38.jpg" height="500"/>
+            </p>
+                        
+           <p><kbd>
+            The other issue, One of the codes had an additional condition which made running on the attiny85 slightly different.
+            That and because the FastLED library from last semester, takes up a ridiculous amount of space on the attiny85, so<br>
+            this project uses the not so different but fairly versatile Neopixel library from Adafruit, which can be downloaded<br>
+            directly from the Arduino Library manager.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-13-41.jpg" height="500"/>
+            </p> 
+               
+           <p><kbd>
+            Now, there are a few ways to desolder SMD components, the way I did it was by blasting the strip with a hot air gun,<br>
+            and then banging the strip on the table to fling the LED off the strip once the solder joints are melted. Do note that<br>
+            this also flings small chunks of molten solder everywhere, and onto your hand.<br>
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-02-39.jpg" height="500"/>
+            </p>
+           <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-02-35.jpg" height="500"/>
+            </p>    
+           <p><kbd>
+            The only issue with the hot air gun is that it tends to damage, fragile SMD components, and out of about 31 I desoldered
+            Only about 21 didnt get completely melted through. So perhaps next time, run the hot air gun on a lower heat. The ones on
+            top left cluster, most of the wirebonds on the silicon chip looked to be completely destroyed.
+            <kbd></p>
+          <p>
+            <img alt="-Insert whole here-" src= "https://gabriel-as.github.io/EP1001-SP/photo_2021-02-08_12-02-31.jpg" height="500"/>
+            </p>    
+                    
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Main.html">Homepage</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part1.html">Electronics Production</a><br><p>
         <p><a href="https://gabriel-as.github.io/EP1001-SP/Part2.html">Electronics Design</a><br><p>
